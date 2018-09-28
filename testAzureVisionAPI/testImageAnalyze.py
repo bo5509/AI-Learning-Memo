@@ -1,12 +1,8 @@
 import requests
-# If you are using a Jupyter notebook, uncomment the following line.
-#%matplotlib inline
 import matplotlib.pyplot as plt
 from PIL import Image
 from io import BytesIO
 import json
-# Replace <Subscription Key> with your valid subscription key.
-# You can check your key with the url: https://azure.microsoft.com/en-us/try/cognitive-services/my-apis/
 subscription_key = "c2625dbf28bc4b9ab0595ea26637a5d1"
 assert subscription_key
 
@@ -21,9 +17,6 @@ vision_base_url = "https://japaneast.api.cognitive.microsoft.com/vision/v1.0/"
 
 analyze_url = vision_base_url + "analyze"
 
-# Set image_url to the URL of an image that you want to analyze.
-#image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/" + \
-#    "Broadway_and_Times_Square_by_night.jpg/450px-Broadway_and_Times_Square_by_night.jpg"
 
 image_url = "http://inews.gtimg.com/newsapp_bt/0/5011199284/641"
 

@@ -54,7 +54,7 @@ params = urllib.parse.urlencode({
 
 try:
     #conn = http.client.HTTPSConnection('southcentralus.api.cognitive.microsoft.com')
-    f = open("people.jpg", "rb", buffering=0)
+    f = open("people2.jpg", "rb", buffering=0)
     #conn.request("POST", "/customvision/v2.0/Prediction/da58abc8-04b1-4bbe-a8ae-f045884a9fdf/image?%s" % params, f.readall(), headers)
 
     response = requests.post(custom_vision_api_url, params=params, headers=headers, data=f)
